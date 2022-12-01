@@ -1,0 +1,33 @@
+New York, New York --iterations 3
+Los Angeles, California --iterations 3
+Chicago, Illinois --iterations 3
+Houston, Texas --iterations 3
+Philadelphia, Pennsylvania --iterations 3
+Phoenix, Arizona --iterations 3
+San Antonio, Texas --iterations 3
+San Diego, California --iterations 3
+Dallas, Texas --iterations 3
+San Jose, California --iterations 3
+Austin, Texas --iterations 3
+Jacksonville, Florida --iterations 3
+San Francisco, California --iterations 3
+Indianapolis, Indiana --iterations 3
+Columbus, Ohio --iterations 3
+Fort Worth, Texas --iterations 3
+Charlotte, North Carolina --iterations 3
+Detroit, Michigan --iterations 3
+El Paso, Texas --iterations 3
+Memphis, Tennessee --iterations 3
+Seattle, Washington --iterations 3
+Denver, Colorado --iterations 3
+Washington, District of Columbia --iterations 3
+Boston, Massachusetts --iterations 3
+Nashville-Davidson, Tennessee --iterations 3
+Baltimore, Maryland --iterations 3
+Oklahoma City, Oklahoma --iterations 3
+Louisville/Jefferson County, Kentucky --iterations 3
+Portland, Oregon --iterations 3
+Las Vegas, Nevada --iterations 3
+Milwaukee, Wisconsin --iterations 3
+Albuquerque, New Mexico --iterations 3
+Tucson, Arizona --iterations 3

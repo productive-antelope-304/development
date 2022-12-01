@@ -1,0 +1,167 @@
+[
+	{
+		"city": "New York",
+		"state": "NY",
+		"population": 8175133
+	},
+	{
+		"city": "Los Angeles",
+		"state": "CA",
+		"population": 3792621
+	},
+	{
+		"city": "Chicago",
+		"state": "IL",
+		"population": 2695598
+	},
+	{
+		"city": "Houston",
+		"state": "TX",
+		"population": 2100263
+	},
+	{
+		"city": "Philadelphia",
+		"state": "PA",
+		"population": 1526006
+	},
+	{
+		"city": "Phoenix",
+		"state": "AZ",
+		"population": 1445632
+	},
+	{
+		"city": "San Antonio",
+		"state": "TX",
+		"population": 1327407
+	},
+	{
+		"city": "San Diego",
+		"state": "CA",
+		"population": 1307402
+	},
+	{
+		"city": "Dallas",
+		"state": "TX",
+		"population": 1197816
+	},
+	{
+		"city": "San Jose",
+		"state": "CA",
+		"population": 945942
+	},
+	{
+		"city": "Austin",
+		"state": "TX",
+		"population": 885400
+	},
+	{
+		"city": "Jacksonville",
+		"state": "FL",
+		"population": 821784
+	},
+	{
+		"city": "San Francisco",
+		"state": "CA",
+		"population": 805235
+	},
+	{
+		"city": "Indianapolis",
+		"state": "IN",
+		"population": 791926
+	},
+	{
+		"city": "Columbus",
+		"state": "OH",
+		"population": 787033
+	},
+	{
+		"city": "Fort Worth",
+		"state": "TX",
+		"population": 741206
+	},
+	{
+		"city": "Charlotte",
+		"state": "NC",
+		"population": 731424
+	},
+	{
+		"city": "Detroit",
+		"state": "MI",
+		"population": 713777
+	},
+	{
+		"city": "El Paso",
+		"state": "TX",
+		"population": 649121
+	},
+	{
+		"city": "Memphis",
+		"state": "TN",
+		"population": 646889
+	},
+	{
+		"city": "Seattle",
+		"state": "WA",
+		"population": 608660
+	},
+	{
+		"city": "Denver",
+		"state": "CO",
+		"population": 600158
+	},
+	{
+		"city": "Washington",
+		"state": "DC",
+		"population": 572059
+	},
+	{
+		"city": "Boston",
+		"state": "MA",
+		"population": 667137
+	},
+	{
+		"city": "Nashville-Davidson",
+		"state": "TN",
+		"population": 654610
+	},
+	{
+		"city": "Baltimore",
+		"state": "MD",
+		"population": 622104
+	},
+	{
+		"city": "Oklahoma City",
+		"state": "OK",
+		"population": 610613
+	},
+	{
+		"city": "Louisville/Jefferson County",
+		"state": "KY",
+		"population": 597337
+	},
+	{
+		"city": "Portland",
+		"state": "OR",
+		"population": 583776
+	},
+	{
+		"city": "Las Vegas",
+		"state": "NV",
+		"population": 583756
+	},
+	{
+		"city": "Milwaukee",
+		"state": "WI",
+		"population": 599164
+	},
+	{
+		"city": "Albuquerque",
+		"state": "NM",
+		"population": 556495
+	},
+	{
+		"city": "Tucson",
+		"state": "AZ",
+		"population": 526116
+	}
+]

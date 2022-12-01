@@ -1,0 +1,1 @@
+python scripts/invoke.py --prompt_as_dir --from_file ~"/Documents/college-work/2022-2023 S1/CSCI1300/development/prompts.txt" --outdir ~"/Documents/college-work/2022-2023 S1/CSCI1300/development/public/cities"
