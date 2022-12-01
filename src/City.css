@@ -1,0 +1,25 @@
+.city {
+	margin: 1px;
+	padding: 8px !important;
+	aspect-ratio: 1;
+	display: flex;
+	background-size: cover;
+	image-rendering: pixelated;
+	align-items: flex-end;
+	justify-content: center;
+	text-align: center;
+	box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #dfdfdf, inset 2px 2px grey,
+		inset -2px -2px #fff;
+	cursor: pointer;
+	width: calc(100% - 2px);
+	position: relative;
+}
+.city:active::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.2);
+}

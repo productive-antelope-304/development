@@ -1,4 +1,4 @@
-export default [
+const sorts = [
 	{ label: "Name (A-Z)", id: "name", by: (c) => c.city },
 	{ label: "Population (low to high)", id: "pop-asc", by: (c) => c.population },
 	{
@@ -7,3 +7,5 @@ export default [
 		by: (c) => -c.population,
 	},
 ];
+
+export default sorts;

@@ -12,7 +12,6 @@ export default function Cart({ cart, setCart, onBuy }) {
 						aria-label={collapsed ? "Maximize" : "Minimize"}
 						onClick={collapse}
 					/>
-					<button aria-label="Close" onClick={() => setCart([])} />
 				</div>
 			</div>
 			{!collapsed && (
@@ -33,49 +32,12 @@ export default function Cart({ cart, setCart, onBuy }) {
 										</li>
 									))}
 								</ul>
-								<fieldset style={{ marginTop: 8 }}>
-									<legend>Acquire city using</legend>
-									<div className="field-row">
-										<input
-											id="acquire-using-money"
-											type="radio"
-											defaultChecked
-											name="acquire-using"
-										/>
-										<label htmlFor="acquire-using-money">Money</label>
-									</div>
-									<div className="field-row">
-										<input
-											id="acquire-using-force"
-											type="radio"
-											name="acquire-using"
-										/>
-										<label htmlFor="acquire-using-force">Force</label>
-									</div>
-									<div className="field-row">
-										<input
-											id="acquire-using-landslide"
-											type="radio"
-											name="acquire-using"
-										/>
-										<label htmlFor="acquire-using-landslide">
-											"Landslide" by Fleetwood Mac
-										</label>
-									</div>
-									<div className="field-row">
-										<input
-											id="acquire-using-brains"
-											type="radio"
-											name="acquire-using"
-										/>
-										<label htmlFor="acquire-using-brains">
-											Cognitive Restructuring
-										</label>
-									</div>
-								</fieldset>
+								<Joke />
 								<button style={{ marginTop: 8 }} onClick={onBuy}>
-									Perform Acquisition
+									Perform acquisition
 								</button>
+								{"\xA0\xA0\xA0\xA0"}
+								<button onClick={() => setCart([])}>Clear cart</button>
 							</>
 						)}
 					</div>
@@ -92,3 +54,32 @@ export default function Cart({ cart, setCart, onBuy }) {
 		</div>
 	);
 }
+
+const Joke = () => (
+	<fieldset style={{ marginTop: 8 }}>
+		<legend>Acquire city using</legend>
+		<div className="field-row">
+			<input
+				id="acquire-using-money"
+				type="radio"
+				defaultChecked
+				name="acquire-using"
+			/>
+			<label htmlFor="acquire-using-money">Money</label>
+		</div>
+		<div className="field-row">
+			<input id="acquire-using-force" type="radio" name="acquire-using" />
+			<label htmlFor="acquire-using-force">Force</label>
+		</div>
+		<div className="field-row">
+			<input id="acquire-using-landslide" type="radio" name="acquire-using" />
+			<label htmlFor="acquire-using-landslide">
+				"Landslide" by Fleetwood Mac
+			</label>
+		</div>
+		<div className="field-row">
+			<input id="acquire-using-brains" type="radio" name="acquire-using" />
+			<label htmlFor="acquire-using-brains">Cognitive Restructuring</label>
+		</div>
+	</fieldset>
+);

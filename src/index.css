@@ -1,9 +1,4 @@
 body {
-	background: #c0c0c0;
-}
-
-body.bought {
-	background: #000;
-	color: #fff;
-	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	background: url(../public/bg2.png);
+	background-size: 10px;
 }

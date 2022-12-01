@@ -1,8 +1,8 @@
 import { useToggle } from "./useToggle";
-import cities from "./cities.json";
 import data from "./combined-cities";
 import stateRegions from "./regions.json";
 import sorts from "./sorts";
+import Toggles from "./Toggles";
 
 const allRegions = [
 	...new Set(stateRegions.map((state) => state.region)),
@@ -18,8 +18,6 @@ export default function Filters({
 	setRegions,
 	states,
 	setStates,
-	text,
-	setText,
 	sort: currentSort,
 	setSort,
 }) {
@@ -43,71 +41,35 @@ export default function Filters({
 						onClick={() => {
 							setRegions(new Set(allRegions));
 							setStates(new Set(allStates.map((state) => state.code)));
-							setText("");
-							setSort("pop-asc");
+							setSort("pop-desc");
 						}}
 					>
-						Reset Filters
+						Reset filters
 					</button>
-					<fieldset style={{ marginBlock: 8 }}>
-						<legend>Filter by Region</legend>
-						{allRegions.map((region) => (
-							<div key={region} className="field-row">
-								<input
-									id={`region-${region}`}
-									type="checkbox"
-									checked={regions.has(region)}
-									onChange={() =>
-										setRegions((regions) => {
-											const newRegions = new Set(regions);
-											if (newRegions.has(region)) {
-												newRegions.delete(region);
-											} else {
-												newRegions.add(region);
-											}
-											return newRegions;
-										})
-									}
-								/>
-								<label htmlFor={`region-${region}`}>{region}</label>
-							</div>
-						))}
-					</fieldset>
 
-					<fieldset style={{ marginBottom: 8 }}>
-						<legend>Filter by State</legend>
-						{allStates.map((state) => (
-							<div key={state.code} className="field-row">
-								<input
-									id={`state-${state.code}`}
-									type="checkbox"
-									checked={states.has(state.code)}
-									onChange={() =>
-										setStates((states) => {
-											const newStates = new Set(states);
-											if (newStates.has(state.code)) {
-												newStates.delete(state.code);
-											} else {
-												newStates.add(state.code);
-											}
-											return newStates;
-										})
-									}
-								/>
-								<label htmlFor={`state-${state.code}`}>{state.name}</label>
-							</div>
-						))}
-					</fieldset>
+					<Toggles
+						legend="region"
+						choices={allRegions}
+						selected={regions}
+						setSelected={setRegions}
+						// otherwise it gets like hundreds of thousands of pixels tall?
+						height={43}
+					/>
 
-					<div className="field-row-stacked" style={{ width: 200 }}>
-						<label htmlFor="city-name">Filter by City Name</label>
-						<input
-							id="city-name"
-							type="text"
-							value={text}
-							onChange={(e) => setText(e.target.value)}
-						/>
-					</div>
+					<Toggles
+						legend="state"
+						choices={allStates}
+						selected={states}
+						setSelected={setStates}
+						makeKey={(state) => state.code}
+						makeLabel={(state) => {
+							const count = data.filter((d) => d.state === state).length;
+							return state.name + (count > 1 ? ` (${count})` : "");
+						}}
+						height={244}
+						showClear
+					/>
+
 					<fieldset style={{ marginTop: 8 }}>
 						<legend>Sort by</legend>
 						{sorts.map((sort) => (

@@ -1,3 +1,4 @@
+import "./City.css";
 import images, { index } from "./images";
 
 export default function City({ city, onClick }) {
