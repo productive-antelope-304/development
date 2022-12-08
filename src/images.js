@@ -12,7 +12,7 @@ const images = preval`
 			return null;
 		}
 		const files = fs.readdirSync(path.join(root, city));
-		const images = files.filter((f) => f.endsWith(".jpg"));
+		const images = files.filter((f) => f.endsWith(".png"));
 		return {
 			city: city.split(", ")[0],
 			images: images.map((i) => encodeURIComponent(path.join("cities", city, i))),
